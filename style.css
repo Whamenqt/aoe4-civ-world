@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Times New Roman', serif; /* Placeholder for medieval-style font */
+}
+
+h1, h2.medieval-text {
+    text-align: center;
+    font-style: italic; /* Medieval flair */
+}
+
+#world-map-container {
+    position: relative;
+    width: 75%; /* Adjust based on the size of your world map image */
+    height: auto;
+    text-align: center;
+}
+#world-map {
+    display: block;
+    max-width: 100%; 
+    height: auto; 
+}
+#world-map-container .draggable {
+    position: absolute;
+    cursor: grab;
+    top: 40px;
+    left: 100px;
+
+}
+.draggable {
+    width: 50px;
+    height:auto;
+    cursor: grab;
+}
+
+#flag1 { top: 160px; left: 750px; }
+#flag2 { top: 200px; left: 650px; }
+#flag3 { top: 150px; left: 400px; }
+#flag4 { top: 160px; left: 750px; }
+#flag5 { top: 160px; left: 750px; }
+#flag6 { top: 160px; left: 750px; }
+#flag7 { top: 160px; left: 750px; }
+#flag8 { top: 160px; left: 750px; }
+#flag9 { top: 160px; left: 750px; }
+
+.dropzone {
+    border: 1pt solid gold;
+    width: 600px;
+    height: 150px;
+    margin: 10px auto; /* Center the bans box */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.drop-zone-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bans-container {
+    text-align: center;
+}
+#person1, #bans, #person2 {
+    border: 6pt solid gold;
+    width: 600px; /* Adjust based on your needs */
+    height: 150px; /* Adjust based on your needs */
+    display: inline-flex; /* Use inline-flex to keep boxes in line */
+    flex-wrap: wrap; /* Allows items to wrap within the container */
+    align-items: center; /* Align items at the start of the container */
+    justify-content: flex-start; /* Align items to the start horizontally */
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+    overflow-y: auto; /* Adds scroll if content overflows vertically */
+}
+
+#drag-container img {
+    width: 100px; /* Ensure images retain this size */
+}
+
+#person1 img, #bans img, #person2 img {
+    width: 90px; /* Adjust as needed */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 2px; /* Optional: Adds some space between images */
+}

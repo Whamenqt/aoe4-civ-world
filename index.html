@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag and Drop Civs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Draft move images</h1>
+
+</div>
+
+<div id="world-map-container">
+    <img src="images/map.png" alt="World Map" id="world-map">
+</div>
+
+<div class="draggable-items">
+
+    <img src="images/flag_chinese.png" alt="Country Flag 1" class="draggable" draggable="true" id="flag1">
+    <img src="images/flag_delhi.png" alt="Country Flag 2" class="draggable" draggable="true" id="flag2">
+    <img src="images/flag_JD.png" alt="Country Flag 3" class="draggable" draggable="true" id="flag3">
+    <img src="images/flag_english.png" alt="Country Flag 4" class="draggable" draggable="true" id="flag4">
+    <img src="images/flag_french.png" alt="Country Flag 5" class="draggable" draggable="true" id="flag5">
+    <img src="images/flag_hre.png" alt="Country Flag 6" class="draggable" draggable="true" id="flag6">
+    <img src="images/flag_malian.png" alt="Country Flag 7" class="draggable" draggable="true" id="flag7">
+    <img src="images/flag_mongol.png" alt="Country Flag 8" class="draggable" draggable="true" id="flag8">
+    <img src="images/flag_rus.png" alt="Country Flag 9" class="draggable" draggable="true" id="flag9">
+</div>
+
+<div class="draggable-items">
+    <h2 class="medieval-text">person1</h2>
+    <div id="person1" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <h2 class="medieval-text">person2</h2>
+    <div id="person2" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<div class="bans-container">
+    <h2 class="medieval-text">bans</h2>
+    <div id="bans" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
